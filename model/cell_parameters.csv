@@ -1,0 +1,33 @@
+﻿Parameter,Value,Min boundary,Max boundary,Unit,Description,Source
+lenR,91.00,,,aa,typical size of protein in ribosomal sector,bioinformatics analysis (/Users/nicolaskylilis/OneDrive - University of Cyprus/Employment 3 Fellowship UCY/project_cell_growth_model/experiments/model_v01/model_parametrisation/proteomics/proteome_partition_study_Mori2021/main_vFinal.py)
+lenO,175.00,,,aa,typical size of protein in housekeeping sector,bioinformatics analysis (/Users/nicolaskylilis/OneDrive - University of Cyprus/Employment 3 Fellowship UCY/project_cell_growth_model/experiments/model_v01/model_parametrisation/proteomics/proteome_partition_study_Mori2021/main_vFinal.py)
+lenC,264.00,,,aa,typical size of protein in catabolic sector,bioinformatics analysis (/Users/nicolaskylilis/OneDrive - University of Cyprus/Employment 3 Fellowship UCY/project_cell_growth_model/experiments/model_v01/model_parametrisation/proteomics/proteome_partition_study_Mori2021/main_vFinal.py)
+lenRibo,12508.00,,,aa,sum of riboprotein sector protein  sizes,bioinformatics analysis (/Users/nicolaskylilis/OneDrive - University of Cyprus/Employment 3 Fellowship UCY/project_cell_growth_model/experiments/model_v01/model_parametrisation/proteomics/proteome_partition_study_Mori2021/main_vFinal.py)
+mass_unit,41.80,,,aa,minimal cell size,"Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+mass_k,0.04,,,aa,cell size increase factor,"Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+s0,1000.00,,,molecules,nutrient ammount,arbitary (relative to Km)
+ns,5.00,,,unitless,nutrient quality scaling factor,arbitary
+Vmax,1.00,,,1/minute,catalytic rate of catabolic enzymes for nutrient convertion to energy,arbitary
+Km,1.00,,,molecules,nutrient levels threshold,arbitary
+thetar,15.00,,,molecules,transcription levels threshold for ribosomal genes (=thetax*thetar),arbitary (thetar>thetax)
+thetax,77.00,,,molecules,transcription levels threshold for non-ribosomal genes,arbitary
+dm,0.30,,,molecules/minute,mRNA degradation rate,"Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+wr,5000.00,,,molecules/minute,transcription rate for riboproteins genes,"10^(5-7)/mRNAgene size; Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+wc,1800.00,,,molecules/minute,transcription rate for catabolic genes,"10^(5-6)/mRNAgene size; Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+wq,2250.00,,,molecules/minute,transcription rate for houskeeping genes,"10^(5-6)/mRNAgene size; Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+Kq,34682572.00,,,molecules,housekeeping proteins levels threshold,relative to housekeping proteome fraction and cell size
+nq,4.00,,,unitleess,steepness parameter for housekeeping proteins transcription repressor function,arbitary
+gmax,1320.00,,,aa/miute,maximum transpeptidation elongation rate,"Bremer, H., & Dennis, P. P. (2008). Modulation of chemical composition and other parameters of the cell at different exponential growth rates. EcoSal Plus, 3(1)."
+Kgamma,18.44,,,molecules,transpeptidation elongation rate threshold for translation based on energy levels,arbitary
+Kmet,25.00,,,molecules,ec maturation threshold,arbitary
+kc,120.00,,,1/minute,rate constant of EC formation from IC,"matching maximum translation elongation rate per ribosomal footprint; Gualerzi, C. O., & Pon, C. L. (2015). Initiation of mRNA translation in bacteria: structural and dynamic aspects. Cellular and Molecular Life Sciences, 72(22), 4341-4367.; Antoun, A., Pavlov, M. Y., Lovmar, M., & Ehrenberg, M. (2006). How initiation factors maximize the accuracy of tRNA selection in initiation of bacterial protein synthesis. Molecular cell, 23(2), 183-193."
+ni,50.00,,,unitless,steepness parameter for Translation Elongation Complex formation repressor function ,
+fp,10.00,,,aa,ribosome footprint,BIONUMBERS ID 107925
+ku,0.20,,,1/minute,Translation Initiation Complex dissociation rate,Initiation of mRNA translation in bacteria: structural and dynamic aspects
+kb_ribo,5.00,,,1/(molecules*minutes),riboproteins mRNA Translation Initiation Complex association rate (for deltaG range -5000 --> 5000 and ku =0.21min-1),
+kb_cat,5.00,,,1/(molecules*minutes),catabolic mRNA Translation Initiation Complex association rate,
+kb_other,3.00,,,1/(molecules*minutes),housekeeping mRNA Translation Initiation Complex association rate,
+k_form,100.00,,,1/minute,assembly rate of ribosome from ribosomal proteins,
+Krepr,442845.00,,,molecules,repression threshold for riboproteins levels,
+mass_min,100000000.00,,,,,
+mass_infl,3400000000.00,,,,,

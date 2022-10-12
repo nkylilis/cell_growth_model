@@ -38,8 +38,8 @@ def model(parms,state_var = []):
 
     """
  
-    m = parms["mass_unit"]# k parameter
-    k = parms["mass_k"] # m parameter
+    m = parms["mass_unit"]# m parameter
+    k = parms["mass_k"] # k parameter
     mass_min = parms["mass_min"]
     mass_infl = parms["mass_infl"]
     
